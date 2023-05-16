@@ -1,0 +1,20 @@
+POST http://localhost:8081/api/todo
+Content-Type: application/json
+
+{
+    "task": "Task 4"
+}
+
+###
+
+PATCH http://localhost:8081/api/todo/2
+Content-Type: application/json
+
+{
+    "task": "Task Modified",
+    "completed": true
+}
+
+###
+
+DELETE http://localhost:8081/api/todo/3
